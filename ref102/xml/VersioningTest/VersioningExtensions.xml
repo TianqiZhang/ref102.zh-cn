@@ -1,0 +1,102 @@
+<Type Name="VersioningExtensions" FullName="VersioningTest.VersioningExtensions">
+  <TypeSignature Language="C#" Value="public static class VersioningExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VersioningExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:VersioningTest.VersioningExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module VersioningExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VersioningExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type VersioningExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>CatLibrary</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExtMethodForD">
+      <MemberSignature Language="C#" Value="public static void ExtMethodForD (this VersioningTest.D i);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExtMethodForD(class VersioningTest.D i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:VersioningTest.VersioningExtensions.ExtMethodForD(VersioningTest.D)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ExtMethodForD (i As D)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void ExtMethodForD(VersioningTest::D ^ i);" />
+      <MemberSignature Language="F#" Value="static member ExtMethodForD : VersioningTest.D -&gt; unit" Usage="VersioningTest.VersioningExtensions.ExtMethodForD i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CatLibrary</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="VersioningTest.D" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="i" />
+        <summary>
+            this extension method should show up in class `D` for all monikers, and in `F/G/H` for `cat-2.0` only.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtMethodForI">
+      <MemberSignature Language="C#" Value="public static void ExtMethodForI (this VersioningTest.I1 i);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExtMethodForI(class VersioningTest.I1 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:VersioningTest.VersioningExtensions.ExtMethodForI(VersioningTest.I1)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ExtMethodForI (i As I1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void ExtMethodForI(VersioningTest::I1 ^ i);" />
+      <MemberSignature Language="F#" Value="static member ExtMethodForI : VersioningTest.I1 -&gt; unit" Usage="VersioningTest.VersioningExtensions.ExtMethodForI i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CatLibrary</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="VersioningTest.I1" Index="0" FrameworkAlternate="cat-1.0" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="i" />
+        <summary>
+            this extension method should show up in interface <c>I1</c>, class <c>C</c> and <c>E</c> for all monikers, and in `F/G/H` for `cat-1.0` only.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtMethodForI">
+      <MemberSignature Language="C#" Value="public static void ExtMethodForI (this VersioningTest.I2 i);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExtMethodForI(class VersioningTest.I2 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:VersioningTest.VersioningExtensions.ExtMethodForI(VersioningTest.I2)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub ExtMethodForI (i As I2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void ExtMethodForI(VersioningTest::I2 ^ i);" />
+      <MemberSignature Language="F#" Value="static member ExtMethodForI : VersioningTest.I2 -&gt; unit" Usage="VersioningTest.VersioningExtensions.ExtMethodForI i" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CatLibrary</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="VersioningTest.I2" RefType="this" Index="0" FrameworkAlternate="cat-2.0" />
+      </Parameters>
+      <Docs>
+        <param name="i" />
+        <summary>
+            this extension method should show up in interface <c>I2</c>, class <c>C</c> and <c>E</c> for all monikers, and in `F/G/H` for `cat-2.0` only.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
